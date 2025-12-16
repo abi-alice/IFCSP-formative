@@ -6,6 +6,7 @@ This project is a 10 question quiz which tests your unit conversion skills!
 Save a copy of the quiz to your device by copying and pasting into a code editor of your choice, eg VS Code.  
 ### Step 2: Run the quiz
 Either run the quiz through your code editor or in your terminal. To run it through your terminal, open the Command Prompt and type 'cd' followed by the path where you saved the file. Then simply type the file name followed by the extension '.py', and select where you want the code to run. If you choose python, it should show a window like this: 
+![What running the quiz in Command Prompt should look like](https://github.com/abi-alice/IFCSP-formative/blob/main/quiz%20in%20cmd.png)
 ### Step 3: Play the quiz
 The quiz provides instructions for you, feel free to use a calculator if you need to. Have fun and good luck!  
 
