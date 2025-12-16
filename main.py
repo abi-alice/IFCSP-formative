@@ -1,5 +1,5 @@
-import random  #Allows random numbers to be generated to convert units
-import time # Allows small breaks to be added to make game seem more calm
+import random  
+import time 
 
 question_data = [
     ("meters", "kilometers", 1000),
@@ -16,7 +16,6 @@ question_data = [
 ]
 
 def question_generation(small_unit, large_unit, conversion_factor):
-    # Create a random unit conversion question
     big_value = random.randint(1, 25)
     correct_answer = big_value * conversion_factor
     return {
@@ -28,7 +27,6 @@ def question_generation(small_unit, large_unit, conversion_factor):
     }
 
 def answer_check(user_input, right_answer):
-    # Checks whether answer is correct
     try:
         user_answer = float(user_input) 
         assert user_answer == right_answer
@@ -37,13 +35,11 @@ def answer_check(user_input, right_answer):
         return False
 
 def run_quiz():
-    # How the quiz runs
     print("Welcome to the Unit Conversion Quiz!\nYou'll have 10 questions.\nIf you want to stop or give up, type 'quit'. GOOD LUCK!")
 
     score = 0
     asked_questions = 0
-    
-    #Selecting random question from the dictionary
+
     selected_question = random.sample(question_data, 10)
     for i, (small, large, conversion) in enumerate(selected_question, 1):
         question = question_generation(small, large, conversion)
@@ -75,4 +71,3 @@ def run_quiz():
                 
 
 run_quiz() 
-
